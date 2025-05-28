@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nektar - Comidas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="icon" href="images/favicon.ico"/>
+</head>
+<body>
+  <header>
+    <div class="logo">ПΣKƬΛR</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="cafes.html">Bebidas</a>
+      <a href="doces.html">Comidas</a>
+    </nav>
+  </header>
+<section class="banner-slider">
+  <div class="slides">
+    <div class="slide active" style="background-image: url('images/banner1.png')"></div>
+
+    <a href="https://pt.quizur.com/quiz/o-oraculo-do-nektar-1psbo" target="_blank">
+      <div class="slide" style="background-image: url('images/banner2.png')"></div>
+    </a>
+
+    <div class="slide" style="background-image: url('images/banner3.png')"></div>
+  </div>
+
+  <button class="arrow left">&#10094;</button>
+  <button class="arrow right">&#10095;</button>
+
+  <div class="dots">
+    <span class="dot active" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+  </div>
+</section>
+  </div>
+  <main>
+    <aside class="filters">
+      <h2>FILTROS</h2>
+        <label><input type="checkbox" value="espresso"> Espressos</label>
+        <label><input type="checkbox" value="latte"> Lattes</label>
+        <label><input type="checkbox" value="capuccino"> Capuccinos</label>
+        <label><input type="checkbox" value="frappe"> Frappes</label>
+        <label><input type="checkbox" value="suco"> Sucos</label>
+        <label><input type="checkbox" value="cha"> Chás</label>
+        <label><input type="checkbox" value="bubble"> Bubble Teas</label>
+        <label><input type="checkbox" value="salgado"> Salgados</label>
+        <label><input type="checkbox" value="doce"> Doces</label>
+        <label><input type="checkbox" value="vegan"> Vegano</label>
+        <label><input type="checkbox" value="promocao"> Promoção</label>
+    </aside>
+    <section class="products">
+            <div class="product latte promocao" data-ingredientes="Café espresso suave, leite integral vaporizado, calda natural de morango, morangos picados, espuma cremosa com toque de baunilha.">
+        <img src="images/afrolatte.png" alt="Afrodite" />
+        <h3>Coração de Espuma</h3>
+        <p>R$ 16,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product frappe vegan" data-ingredientes="Café espresso duplo extra forte, leite de amêndoas, chocolate 70% amargo (vegano), xarope de tâmaras, raspas de chocolate, gelo.">
+        <img src="images/atena.png" alt="Atena" />
+        <h3>Frappe Coruja</h3>
+        <p>R$ 17,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product latte" data-ingredientes="Café espresso leve, leite vaporizado (pode ser vegetal sob pedido), canela em pó e extrato natural de baunilha, espuma aveludada.">
+        <img src="images/Hestia.png" alt="hestia" />
+        <h3>Calma de Héstia</h3>
+        <p>R$ 15,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product vegan cha" data-ingredientes="Infusão de lavanda, cravo, camomila e folhas de capim-limão, finalizado com pétalas secas comestíveis.">
+        <img src="images/Nyx.png" alt="nyx" />
+        <h3>Tisana de Nyx</h3>
+        <p>R$ 14,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product bubble" data-ingredientes="Chá roxo infusionado, leite vegetal (coco ou aveia), xarope de mel, essência de lavanda, essência de jasmim, perolinhas de tapioca roxas, toque de limão siciliano.">
+        <img src="images/euridice.png" alt="euridice" />
+        <h3>Joia de Eurídice</h3>
+        <p>R$ 18,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product bubble" data-ingredientes="Chá preto infusionado, leite integral ou vegetal, purê de uva roxa, mel orgânico, bolinhas de tapioca preta.">
+        <img src="images/orfeu.png" alt="orfeu" />
+        <h3>Perla de Orfeu</h3>
+        <p>R$ 17,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product suco vegan" data-ingredientes="Suco 100% natural de laranja e maracujá fresco, adoçado com açúcar mascavo ou adoçante (opcional).">
+        <img src="images/demeter.png" alt="demeter" />
+        <h3>Fruto de Deméter</h3>
+        <p>R$ 13,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product suco vegan" data-ingredientes="Suco de romã natural, toque de hortelã e limão tahiti, gelo e adoçante leve (opcional).">
+        <img src="images/persefone.png" alt="orfeu" />
+        <h3>Romã de Perséfone</h3>
+        <p>R$ 14,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product capuccino" data-ingredientes="Café espresso intenso, leite vaporizado, canela em pó, leve toque de pimenta cayena, espuma espessa com açúcar mascavo.">
+        <img src="images/tartaro.png" alt="tartaro" />
+        <h3>Caputartaro</h3>
+        <p>R$ 16,50</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product capuccino" data-ingredientes="Café espresso, leite vaporizado, calda de caramelo artesanal, cacau 50%, espuma com flor de sal e leve toque de baunilha.">
+        <img src="images/nemesis.png" alt="nemesis" />
+        <h3>Espuma de Nêmesis</h3>
+        <p>R$ 16,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product espresso" data-ingredientes="Café espresso duplo super concentrado, toque de pimenta rosa moída, finalizado com pó de cacau vermelho.">
+        <img src="images/ares.png" alt="ares" />
+        <h3>Raiva de Ares</h3>
+        <p>R$ 12,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product espresso vegan" data-ingredientes="Café espresso duplo supertorrado, pó de cacau 100% puro, leve infusão de grãos de cacau torrados.">
+        <img src="images/hades.png" alt="hades" />
+        <h3>Sombra de Hades</h3>
+        <p>R$ 13,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product doce vegan" data-ingredientes="Gelatina de uva escura, esferas de mel (esferificação), essência de flor de laranjeira.">
+        <img src="images/caos.png" alt="Gelatina do Caos" />
+        <h3>Gelatina do Caos</h3>
+        <p>R$ 9,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product doce" data-ingredientes="6 Unidades / Massa amanteigada aromatizada com baunilha e raspas de laranja, corantes naturais de cúrcuma e beterraba dourada.">
+        <img src="images/Apolo.png" alt="apolo" />
+        <h3>Biscoitos de Apolo</h3>
+        <p>R$ 7,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product salgado" data-ingredientes="Ciclope: Pastel de Frango / Tifão: Pastel de Queijo / Minotauro: Pastel de Carne / Cerineia: Pastel Vegano de Brocólis">
+        <img src="images/pasteis.gif" alt="pasteis" />
+        <h3>Pasteis Monstruosos</h3>
+        <p>R$ 7,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product doce" data-ingredientes="Base de biscoito, creme de cream cheese com baunilha, calda de morango fresco, pétalas de rosa cristalizadas.">
+        <img src="images/creampie.png" alt="creampie" />
+        <h3>Cheese Love</h3>
+        <p>R$ 12,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product promocao doce" data-ingredientes="4 Unidades Sortidas / Merengue francês, farinha de amêndoas, recheios variados (lavanda, limão siciliano, framboesa, pistache, café, violeta).">
+        <img src="images/Macarons.png" alt="macarons" />
+        <h3>Macarons Olimpianos</h3>
+        <p>R$ 14,50</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product salgado" data-ingredientes="3 Unidades / Pãezinhos a vapor estilo bao, recheio de carne suína temperada com gengibre, cebolinha e molho agridoce.">
+        <img src="images/circe.png" alt="Circe" />
+        <h3>Pãozinhos da Circe</h3>
+        <p>R$ 15,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+    </section>
+  </main>
+  <div class="cart">
+  <div class="cart-header">
+    <h2>Carrinho</h2>
+    <button class="cart-toggle">-</button>
+  </div>
+  <ul class="cart-items"></ul>
+  <p class="cart-total">Total: R$ 0,00</p>
+  <button class="checkout-btn">Continuar</button>
+</div>
+</div>
+
+<div class="product-modal hidden" id="productModal">
+  <div class="modal-content">
+    <button class="close-modal">&times;</button>
+    <img src="" alt="" class="modal-img" />
+    <h2 class="modal-title"></h2>
+    <p class="modal-ingredients"></p>
+    <p class="modal-price"></p>
+  </div>
+</div>
+<footer>
+
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>

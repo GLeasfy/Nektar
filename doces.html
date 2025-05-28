@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nektar - Comidas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="icon" href="images/favicon.ico"/>
+</head>
+<body>
+  <header>
+    <div class="logo">ПΣKƬΛR</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cafes.html">Bebidas</a>
+      <a href="doces.html" class="active">Comidas</a>
+    </nav>
+  </header>
+  <div class="banner">
+  <img src="images/bannerb.png" alt="Banner" />
+  </div>
+  <main>
+    <aside class="filters">
+      <h2>FILTROS</h2>
+        <label><input type="checkbox" value="salgado"> Salgados</label>
+        <label><input type="checkbox" value="doce"> Doces</label>
+        <label><input type="checkbox" value="vegan"> Vegano</label>
+        <label><input type="checkbox" value="promocao"> Promoção</label>
+    </aside>
+    <section class="products">
+      <div class="product doce vegan" data-ingredientes="Gelatina de uva escura, esferas de mel (esferificação), essência de flor de laranjeira.">
+        <img src="images/caos.png" alt="Gelatina do Caos" />
+        <h3>Gelatina do Caos</h3>
+        <p>R$ 9,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product doce" data-ingredientes="6 Unidades / Massa amanteigada aromatizada com baunilha e raspas de laranja, corantes naturais de cúrcuma e beterraba dourada.">
+        <img src="images/Apolo.png" alt="apolo" />
+        <h3>Biscoitos de Apolo</h3>
+        <p>R$ 7,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product salgado" data-ingredientes="Ciclope: Pastel de Frango / Tifão: Pastel de Queijo / Minotauro: Pastel de Carne / Cerineia: Pastel Vegano de Brocólis">
+        <img src="images/pasteis.gif" alt="pasteis" />
+        <h3>Pasteis Monstruosos</h3>
+        <p>R$ 7,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product doce" data-ingredientes="Base de biscoito, creme de cream cheese com baunilha, calda de morango fresco, pétalas de rosa cristalizadas.">
+        <img src="images/creampie.png" alt="creampie" />
+        <h3>Cheese Love</h3>
+        <p>R$ 12,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product promocao doce" data-ingredientes="4 Unidades Sortidas / Merengue francês, farinha de amêndoas, recheios variados (lavanda, limão siciliano, framboesa, pistache, café, violeta).">
+        <img src="images/Macarons.png" alt="macarons" />
+        <h3>Macarons Olimpianos</h3>
+        <p>R$ 14,50</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+      <div class="product salgado" data-ingredientes="3 Unidades / Pãezinhos a vapor estilo bao, recheio de carne suína temperada com gengibre, cebolinha e molho agridoce.">
+        <img src="images/circe.png" alt="Circe" />
+        <h3>Pãozinhos da Circe</h3>
+        <p>R$ 15,00</p>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+    </section>
+  </main>
+  <div class="cart">
+  <div class="cart-header">
+    <h2>Carrinho</h2>
+    <button class="cart-toggle">-</button>
+  </div>
+  <ul class="cart-items"></ul>
+  <p class="cart-total">Total: R$ 0,00</p>
+  <button class="checkout-btn">Continuar</button>
+</div>
+</div>
+
+<div class="product-modal hidden" id="productModal">
+  <div class="modal-content">
+    <button class="close-modal">&times;</button>
+    <img src="" alt="" class="modal-img" />
+    <h2 class="modal-title"></h2>
+    <p class="modal-ingredients"></p>
+    <p class="modal-price"></p>
+  </div>
+</div>
+<footer>
+
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
