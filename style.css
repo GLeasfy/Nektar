@@ -123,12 +123,17 @@ main {
     border-radius: 15px;
 }
 
+.banner {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+
 .banner img {
   width: 100%;
-  aspect-ratio: 1440 / 303;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .add-to-cart {
@@ -338,11 +343,10 @@ main {
 }
 
 .banner-slider {
+  position: relative;
   width: 100%;
-  aspect-ratio: 1440 / 500;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
 }
 
 .slides {
@@ -387,7 +391,7 @@ main {
 
 .dots {
   position: absolute;
-  top: 77%;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
